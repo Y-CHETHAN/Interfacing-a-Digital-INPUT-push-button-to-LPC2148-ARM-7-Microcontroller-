@@ -84,39 +84,41 @@ Step 5: Click On Pick from Libraries. It shows the categories of components avai
 
 Figure -06 Pick from Libraries
 
+![image](https://user-images.githubusercontent.com/36288975/193398058-2519b9d0-a2ca-421f-957d-7507fc7791b8.png)
+
+Figure -07 Keywords Textbox
+
 Step 6: Select the components from categories or type the part name in Keywords text box. Place all the required components and route the wires i.e, make connections. Either selection mode above the component mode or component mode allows to connect through wires. Left click from one terminal to other to make connection. Double right-click on the connected wire or the component to remove connection or the component respectively. Double click on the component to edit the properties of the components and click on Ok.
 
 ![image](https://user-images.githubusercontent.com/36288975/193398050-d6d28800-0c5b-4f5c-a77c-227f3336a125.png)
 
-Figure -07 Component Properties Selection
+Figure -08 Component Properties Selection
 
-Step 8: Select ARM microcontroller form the library – pick part 
+Step 7: Select ARM microcontroller from the library – pick part 
 
 ![image](https://user-images.githubusercontent.com/36288975/193398055-587ebd36-4b82-4eaf-837c-f94c3cf2d071.png)
   
-Figure -08 LPC2138/48 selection
+Figure -09 LPC2138/48 selection
 
-Step 7: After making necessary connections click on debug.
+Step 8: After making necessary connections click on debug.
 
-![image](https://user-images.githubusercontent.com/36288975/193398058-2519b9d0-a2ca-421f-957d-7507fc7791b8.png)
+Step 9: The selected components will appear in the devices list. Select the component and place it in the design sheet by left-click., post which select all the associated components as shown in the circuit diagram below. Example shows selection of push button. Select the components accordingly.
 
-Figure -09 Keywords Textbox
+![image](https://user-images.githubusercontent.com/36288975/189275464-1074d010-f106-4615-9959-68ed1a271502.png)
 
-Step 8: The selected components will appear in the devices list. Select the component and place it in the design sheet by left-click., post which select all the associated components as shown in the circuit diagram below 
+Figure -10 Circuit diagram of LED interface on port -0
 
 ![image](https://user-images.githubusercontent.com/36288975/193398065-c12b4984-db8e-40cc-890d-221db1c35b0d.png)
 
-Example shows selection of push button. Select the components accordingly.
+Figure -11 Push Button Selection
 
-Figure -10 Push Button Selection
+Step 10: Select the hex file from the Kiel program folder and import the program in to the microcontroller as shown in figure 11 ,  debug and if no errors in connections are found, run the VSM simulation to view the output.
 
 ![image](https://user-images.githubusercontent.com/36288975/193398071-76df0a57-7e76-4868-9769-c63d220482b8.png)
 
-Figure -11 Hex file for simulation 
+Figure -12 Hex file for simulation
 
-Step 9: Select the hex file from the Kiel program folder and import the program in to the microcontroller as shown in figure 11 ,  debug and if no errors in connections are found, run the VSM simulation to view the output.
-
-<br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 ## Kiel - Program:
 ```c
