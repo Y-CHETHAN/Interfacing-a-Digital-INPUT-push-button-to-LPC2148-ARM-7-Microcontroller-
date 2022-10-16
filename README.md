@@ -158,5 +158,7 @@ int main ()
 ### Circuit Diagram:
 <img width="595" alt="image" src="https://user-images.githubusercontent.com/75234991/196023911-3927eabc-2ba0-4b54-b2d8-4c6ba7ca8bb1.png">
 
+<br><br>
+
 ## Result:
 Thus, Interfacing a digital input (push button) with ARM microcontroller and a code to switch on and off an LED is executed successfully.
