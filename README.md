@@ -122,10 +122,7 @@ Step 9: Select the hex file from the Kiel program folder and import the program 
 ```c
 #include <lpc214x.h>
 
-// Input switches
 #define SW1	0x00010000
-
-// Output LEDs
 #define LED_D9	0x00000400
 
 int main ()
