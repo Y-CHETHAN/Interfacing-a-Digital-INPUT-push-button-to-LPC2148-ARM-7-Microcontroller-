@@ -112,7 +112,7 @@ Figure -10 Circuit diagram of LED interface on port -0
 
 Figure -11 Push Button Selection
 
-Step 10: Select the hex file from the Kiel program folder and import the program in to the microcontroller as shown in figure 11 ,  debug and if no errors in connections are found, run the VSM simulation to view the output.
+Step 10: Select the hex file from the Kiel program folder and import the program in to the microcontroller as shown in figure 10 ,  debug and if no errors in connections are found, run the VSM simulation to view the output.
 
 ![image](https://user-images.githubusercontent.com/36288975/193398071-76df0a57-7e76-4868-9769-c63d220482b8.png)
 
