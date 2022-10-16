@@ -150,7 +150,7 @@ int main ()
 ### LED OFF:
 ![image](https://user-images.githubusercontent.com/75234991/196023853-a529f893-927e-4dcf-b7db-fd7ee9f54144.png)
 
-<br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 ### LED ON:
 <img width="693" alt="image" src="https://user-images.githubusercontent.com/75234991/196023929-d897764f-8a0a-4fa0-987d-e1cfa8860c06.png">
