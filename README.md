@@ -1,7 +1,7 @@
 # EXPERIMENT 03 - INTERFACING A DIGITAL INPUT (PUSH BUTTON) TO LPC2148 ARM 7 MICROCONTROLLER
 
 ## Aim:
-To Interface a Digital input (push button ) to LPC2148 ARM 7 and write a code to switch on and off an LED 
+To Interface a Digital input (push button) to LPC2148 ARM 7 and write a code to switch on and off an LED.
 
 ## Components required:
 Proteus ISIS professional suite, Kiel μ vision 5 Development environment 
@@ -18,35 +18,35 @@ The LPC2148 microcontroller is designed by Philips (NXP Semiconductor) with seve
 Features of LPC2148<br>
 The main features of LPC2148 include the following.
 * The LPC2148 is a 16 bit or 32 bit ARM7 family based microcontroller and available in a small LQFP64 package.
-*	ISP (in system programming) or IAP (in application programming) using on-chip boot loader software.
-*	On-chip static RAM is 8 kB-40 kB, on-chip flash memory is 32 kB-512 kB, the wide interface is 128 bit, or accelerator allows 60 MHz high-speed operation.
-*	It takes 400 milliseconds time for erasing the data in full chip and 1 millisecond time for 256 bytes of programming.
-*	Embedded Trace interfaces and Embedded ICE RT offers real-time debugging with high-speed tracing of instruction execution and on-chip Real Monitor software.
-*	It has 2 kB of endpoint RAM and USB 2.0 full speed device controller. Furthermore, this microcontroller offers 8kB on-chip RAM nearby to USB with DMA.
-*	One or two 10-bit ADCs offer 6 or 14 analogs i/ps with low conversion time as 2.44 μs/ channel.
-*	Only 10 bit DAC offers changeable analog o/p.
-*	External event counter/32 bit timers-2, PWM unit, & watchdog.
-*	Low power RTC (real time clock) & 32 kHz clock input.
-*	Several serial interfaces like two 16C550 UARTs, two I2C-buses with 400 kbit/s speed.
-*	5 volts tolerant quick general purpose Input/output pins in a small LQFP64 package.
-*	Outside interrupt pins-21.
-*	60 MHz of utmost CPU CLK-clock obtainable from the programmable-on-chip phase locked loop by resolving time is 100 μs.
-*	The incorporated oscillator on the chip will work by an exterior crystal that ranges from 1 MHz-25 MHz
-*	The modes for power-conserving mainly comprise idle & power down.
-*	For extra power optimization, there are individual enable or disable of peripheral functions and peripheral CLK scaling.
+* ISP (in system programming) or IAP (in application programming) using on-chip boot loader software.
+* On-chip static RAM is 8 kB-40 kB, on-chip flash memory is 32 kB-512 kB, the wide interface is 128 bit, or accelerator allows 60 MHz high-speed operation.
+* It takes 400 milliseconds time for erasing the data in full chip and 1 millisecond time for 256 bytes of programming.
+* Embedded Trace interfaces and Embedded ICE RT offers real-time debugging with high-speed tracing of instruction execution and on-chip Real Monitor software.
+* It has 2 kB of endpoint RAM and USB 2.0 full speed device controller. Furthermore, this microcontroller offers 8kB on-chip RAM nearby to USB with DMA.
+* One or two 10-bit ADCs offer 6 or 14 analogs i/ps with low conversion time as 2.44 μs/ channel.
+* Only 10 bit DAC offers changeable analog o/p.
+* External event counter/32 bit timers-2, PWM unit, & watchdog.
+* Low power RTC (real time clock) & 32 kHz clock input.
+* Several serial interfaces like two 16C550 UARTs, two I2C-buses with 400 kbit/s speed.
+* 5 volts tolerant quick general purpose Input/output pins in a small LQFP64 package.
+* Outside interrupt pins-21.
+* 60 MHz of utmost CPU CLK-clock obtainable from the programmable-on-chip phase locked loop by resolving time is 100 μs.
+* The incorporated oscillator on the chip will work by an exterior crystal that ranges from 1 MHz-25 MHz
+* The modes for power-conserving mainly comprise idle & power down.
+* For extra power optimization, there are individual enable or disable of peripheral functions and peripheral CLK scaling.
 
 ![image](https://user-images.githubusercontent.com/36288975/193398005-6e1257a9-16ae-43f5-9f09-33bb21ed25b9.png)
 
-### Procedure:
+## Procedure:
 For creation of project on Kiel μ vision 5 Development environment (LPC21 XX/48/38)
-1.	Click on the menu Project — New µVision Project creates a new project. Select an empty folder and enter the project name, for example Project1. It is good practice to use a separate folder for each project.
-2.	Next, the dialog Select Device for Target opens.
+1. Click on the menu Project — New µVision Project creates a new project. Select an empty folder and enter the project name, for example Project1. It is good practice to use a separate folder for each project.
+2. Next, the dialog Select Device for Target opens.
 ![image](https://user-images.githubusercontent.com/36288975/193398020-d0963a16-4349-4979-87d7-4c9dc11e2346.png)
 Figure -01 Target selection
 Select the device database. Default is Software Packs. You can have various local device databases, which show up in the drop-down box. For legacy devices (Arm7, Arm9), use the Legacy Device Database [no RTE]
-3.	Select the device for your application. This selection defines essential tool settings such as compiler controls, the memory layout for the linker, and the Flash programming algorithms.
-4.	Click OK.
-5.	Click on the new file option and save the file using save option with .C extension 
+3. Select the device for your application. This selection defines essential tool settings such as compiler controls, the memory layout for the linker, and the Flash programming algorithms.
+4. Click OK.
+5. Click on the new file option and save the file using save option with .C extension 
 
 For creating the simulation environment in Proteus suite Starting New Design
 
@@ -113,30 +113,27 @@ Figure -11 Hex file for simulation
 Step 9: Select the hex file from the Kiel program folder and import the program in to the microcontroller as shown in figure 11 ,  debug and if no errors in connections are found, run the VSM simulation to view the output.
 
 
-### Kiel - Program:
+## Kiel - Program:
 ```
 #include <lpc214x.h>
 
-// Input switches
-#define SW1	0x00010000				// P1.16
-
-// Output LEDs
-#define LED_D9	0x00000400 			// P0.10
+#define SW1	0x00010000
+#define LED_D9	0x00000400
 
 int main ()
 {
-	IO0DIR = 0x003C3C00 ;			// Configure P0.10 to P0.13 and P0.18 to P0.21 as Output	
-	IO0SET = 0x003C3C00 ;			// SET (1) P0.10 to P0.13 and P0.18 to P0.21, LEDs OFF
+	IO0DIR = 0x003C3C00 ;
+	IO0SET = 0x003C3C00 ;
 	while(1)
 	{
 		
-		if((IO1PIN & SW1)==0)			// Check whether SW1 is pressed or not
+		if((IO1PIN & SW1)==0)
 		{
-			IO0SET = LED_D9 ;		// LED D9, ON if SW1 pressed
+			IO0SET = LED_D9 ;
 		}
 		else
 		{
-			IO0CLR = LED_D9 ;		// LED D9, OFF if SW1 released
+			IO0CLR = LED_D9 ;
 		}
 		
 	}
@@ -144,5 +141,5 @@ int main ()
 ```
 ### Output:
 
-### Result :
-Thus, Interfacing a digital output with ARM microcontroller is executed successfully.
+### Result:
+Thus, Interfacing a digital input (push button) with ARM microcontroller and a code to switch on and off an LED is executed successfully.
