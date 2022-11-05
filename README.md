@@ -15,8 +15,6 @@ ARM7 processor is commonly used in embedded system applications. Also, it is a b
 LPC2148 Microcontroller<br>
 The LPC2148 microcontroller is designed by Philips (NXP Semiconductor) with several in-built features & peripherals. Due to these reasons, it will make more reliable as well as the efficient option for an application developer. LPC2148 is a 16-bit or 32-bit microcontroller based on ARM7 family.
 
-<br><br>
-
 Features of LPC2148<br>
 The main features of LPC2148 include the following.
 * The LPC2148 is a 16 bit or 32 bit ARM7 family based microcontroller and available in a small LQFP64 package.
@@ -39,18 +37,16 @@ The main features of LPC2148 include the following.
 
 ![image](https://user-images.githubusercontent.com/36288975/193398005-6e1257a9-16ae-43f5-9f09-33bb21ed25b9.png)
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
 ## Procedure:
 For creation of project on Kiel μ vision 5 Development environment (LPC21 XX/48/38)
-1.	Click on the menu Project — New µVision Project creates a new project. Select an empty folder and enter the project name, for example Project1. It is good practice to use a separate folder for each project.
-2.	Next, the dialog Select Device for Target opens.
+1. Click on the menu Project — New µVision Project creates a new project. Select an empty folder and enter the project name, for example Project1. It is good practice to use a separate folder for each project.
+2. Next, the dialog Select Device for Target opens.
 ![image](https://user-images.githubusercontent.com/36288975/193398020-d0963a16-4349-4979-87d7-4c9dc11e2346.png)
 Figure -01 Target selection
 Select the device database. Default is Software Packs. You can have various local device databases, which show up in the drop-down box. For legacy devices (Arm7, Arm9), use the Legacy Device Database [no RTE]
-3.	Select the device for your application. This selection defines essential tool settings such as compiler controls, the memory layout for the linker, and the Flash programming algorithms.
-4.	Click OK.
-5.	Click on the new file option and save the file using save option with .C extension 
+3. Select the device for your application. This selection defines essential tool settings such as compiler controls, the memory layout for the linker, and the Flash programming algorithms.
+4. Click OK.
+5. Click on the new file option and save the file using save option with .C extension 
 
 For creating the simulation environment in Proteus suite Starting New Design
 
@@ -146,21 +142,16 @@ int main ()
 	}
 }
 ```
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 ## Output:
 ### LED OFF:
 ![image](https://user-images.githubusercontent.com/75234991/196023853-a529f893-927e-4dcf-b7db-fd7ee9f54144.png)
-
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 ### LED ON:
 <img width="693" alt="image" src="https://user-images.githubusercontent.com/75234991/196023929-d897764f-8a0a-4fa0-987d-e1cfa8860c06.png">
 
 ### Circuit Diagram:
 <img width="595" alt="image" src="https://user-images.githubusercontent.com/75234991/196023911-3927eabc-2ba0-4b54-b2d8-4c6ba7ca8bb1.png">
-
-<br><br>
 
 ## Result:
 Thus, Interfacing a digital input (push button) with ARM microcontroller and a code to switch on and off an LED is executed successfully.
