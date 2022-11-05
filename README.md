@@ -114,8 +114,6 @@ Step 10: Select the hex file from the Kiel program folder and import the program
 
 Figure -12 Hex file for simulation
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
 ## Kiel - Program:
 ```c
 #include <lpc214x.h>
